@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #444;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #45a049;
+    }
+
+    .scroll-btn {
+      display: inline-block;
+      background-color: #008CBA;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .scroll-btn:hover {
+      background-color: #005c80;
+    }
+
+    .image-container {
+      text-align: center;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+  <title>Nathan's Page</title>
+</head>
+<body>
+
+  <header>
+    <h1>Nathan's Page</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to my Website!</h2>
+    <div class="image-container">
+      <img src="your-image1.jpg" alt="Image 1">
+    </div>
+    <p>Your introduction text goes here.</p>
+    <a href="#" class="button">Learn More</a>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <div class="image-container">
+      <img src="your-image2.jpg" alt="Image 2">
+    </div>
+    <p>Your about us text goes here.</p>
+    <a href="#" class="button">Read More</a>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="image-container">
+      <img src="your-image3.jpg" alt="Image 3">
+    </div>
+    <p>Your services description goes here.</p>
+    <a href="#" class="button">View Services</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Your contact information and form go here.</p>
+    <a href="#" class="button">Contact Now</a>
+  </section>
+
+  <div class="scroll-btn" onclick="scrollToTop()">Scroll to Top</div>
+
+  <script>
+    function scrollToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+</body>
+</html>
